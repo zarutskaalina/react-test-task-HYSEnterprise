@@ -1,6 +1,8 @@
 import styles from "./Header.module.css";
 import { useState } from "react";
-import { NotesForm } from "../NotesForm/NotesForm";
+import { CreateEditNotePage } from "../../pages/CreateEditNotePage/CreateEditNotePage";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface HeaderProps {
   title?: string;
@@ -8,18 +10,28 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ title, children }) => {
+  const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const closeModal = () => {
+    setIsModalOpen(false);
+    navigate("/");
+  };
+
   return (
     <header className={styles.headerContaine}>
-      {title && <a href="/">{title}</a>}
-      {children}
-
-      <button onClick={openModal} className={styles.openModalButton}>
-        +
-      </button>
+      <ul>
+        <li>{title && <Link to="/">{title}</Link>}</li>
+        <li>
+          {children}
+          <Link to="/create">
+            <button onClick={openModal} className={styles.openModalButton}>
+              +
+            </button>
+          </Link>
+        </li>
+      </ul>
 
       {isModalOpen && (
         <div className={styles.modalOverlay} onClick={closeModal}>
@@ -30,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({ title, children }) => {
             <button onClick={closeModal} className={styles.closeButton}>
               Close
             </button>
-            <NotesForm />
+            <CreateEditNotePage />
           </div>
         </div>
       )}

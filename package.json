@@ -9,6 +9,9 @@
     "build": "tsc && vite build src/*.html --public-url /hotes.app/",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git"
+  },
   "devDependencies": {
     "typescript": "^5.5.3",
     "vite": "^5.4.0"

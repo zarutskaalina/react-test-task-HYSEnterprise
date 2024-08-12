@@ -1,6 +1,10 @@
 .headerContaine {
   padding: 25px 150px;
   background-color: #fae6e4;
+}
+
+.headerContaine ul {
+  flex-direction: row;
   display: flex;
   justify-content: space-between;
   align-items: center;
