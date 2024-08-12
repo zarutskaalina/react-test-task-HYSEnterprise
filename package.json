@@ -1,16 +1,17 @@
 {
-  "name": "vite-project",
+  "name": "react-test-task-HYSEnterprise/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://zarutskaalina.github.io/react-test-task-HYSEnterprise/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build src/*.html --public-url /react-test-task-HYSEnterprise/",
+    "build": "tsc && vite build --public-base-url /react-test-task-HYSEnterprise/",
     "preview": "vite preview"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/yourusername/react-test-task-HYSEnterprise.git"
   },
   "devDependencies": {
     "typescript": "^5.5.3",
