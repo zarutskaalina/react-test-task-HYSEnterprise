@@ -1,0 +1,22 @@
+.sideBar {
+  width: 470px;
+}
+
+.categoryList {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.categoryList li {
+  font-size: 28px;
+  font-weight: 600;
+  color: black; /* Темний колір тексту */
+}
+
+.categoryList li:hover,
+.categoryList li:focus {
+  color: #e74c3c;
+}

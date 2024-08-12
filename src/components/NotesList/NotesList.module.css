@@ -1,0 +1,56 @@
+.notesList {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.notesListItem {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 500px; /* Фіксована ширина */
+  height: 265px; /* Фіксована висота */
+}
+
+.notesListItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.notesListItem h2 {
+  margin: 0 0 8px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.notesListItem h3 {
+  margin: 0 0 8px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.notesListItem p {
+  margin: 0 0 12px;
+  font-size: 1em;
+  color: #555;
+}
+
+.notesListItem button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.notesListItem button:hover {
+  background-color: #c0392b;
+}
