@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://zarutskaalina.github.io/hotes.app/",
+  "homepage": "https://zarutskaalina.github.io/react-test-task-HYSEnterprise/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build src/*.html --public-url /hotes.app/",
+    "build": "tsc && vite build src/*.html --public-url /react-test-task-HYSEnterprise/",
     "preview": "vite preview"
   },
   "repository": {
