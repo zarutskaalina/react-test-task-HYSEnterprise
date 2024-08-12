@@ -6,7 +6,7 @@
   "homepage": "https://zarutskaalina.github.io/react-test-task-HYSEnterprise/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --public-base-url /react-test-task-HYSEnterprise/",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "repository": {
