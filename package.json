@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://hotes.app",
+  "homepage": "https://zarutskaalina.github.io/hotes.app/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build src/*.html --public-url /hotes.app/",
     "preview": "vite preview"
   },
   "devDependencies": {
