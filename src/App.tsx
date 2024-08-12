@@ -18,7 +18,7 @@ import { Header } from "./components/Header/Header";
 
 export const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/react-test-task-HYSEnterprise">
       <Header title="Notes App" />
       <main>
         <Routes>
